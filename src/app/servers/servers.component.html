@@ -1,0 +1,32 @@
+<label>Course Name</label>
+
+<!-- one way binding -->
+<!-- <input type="text" 
+class="form-control"
+(input)="updateCourseName($event)"> -->
+
+<!-- two way binding -->
+<input type="text" 
+class="form-control"
+[(ngModel)]="CourseName">
+
+
+<button class="btn btn-primary" 
+[disabled]='!display' (click)="clickButton()">
+Add Course</button>
+
+<!-- demo of input -->
+<!-- <p [innerText]="CourseName"></p> -->
+
+<!-- attribute binding -->
+<!-- <p [innerText]="display"></p> -->
+
+<!-- string interpolation -->
+<!-- <p>{{display}}</p> -->
+<!-- <p [innerText]="addCourse"></p> -->
+<p *ngIf="directive">{{addCourse}}</p>
+
+<app-server></app-server>
+
+
+
