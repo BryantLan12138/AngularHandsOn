@@ -1,2 +1,7 @@
-<h4>My name is {{name}}, I like doing {{activity}}</h4>
+<p 
+    [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{onshore: status === 'onshore'}">
+    The course name is {{name}}, it status is {{status}}
+</p>
+
 <!-- <h4>My name is {{getName()}}, I like doing {{activity}}</h4> -->
